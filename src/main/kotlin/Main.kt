@@ -32,7 +32,7 @@ fun createDataset(allFiles: List<File>) {
     val validRate = 0.25
 
     for (file in allFiles) {
-        val id = getId(file.name).uppercase()
+        val id = getId(file.name)?.uppercase() ?: continue
         val name = getName(file.name).uppercase()
         val trump = Trump.values().findLast { it.isMatch(id) } ?: continue
         val fileName = "${trump.value}-$name-${copiedMap[trump]?.size ?: 0}.${file.extension}"
@@ -78,9 +78,14 @@ fun createDatasetToLinear(allFiles: List<File>) {
     val copiedMap = mutableMapOf<Trump, MutableList<File>>()
 
     for (file in allFiles) {
-        val id = getId(file.name).uppercase()
+        val id = getId(file.name)?.uppercase()
         val name = getName(file.name).uppercase()
-        val trump = Trump.values().findLast { it.isMatch(id) } ?: continue
+        val trump = id?.let { Trump.values().findLast { it.isMatch(id) } }
+
+        if(id == null || trump == null) {
+            file.copyTo(File(errorDir, file.name), overwrite = true)
+            continue
+        }
 
         val fileName: String
         val saveFile: File
@@ -121,9 +126,14 @@ fun getDir(parentDir: File, name: String): File {
     return file
 }
 
-fun getId(name: String): String {
+fun getId(name: String): String? {
     val index = name.indexOf("-")
-    return if(index != -1) name.substring(0, index) else name
+    if(index != -1) return name.substring(0, index)
+
+    val otherIndex = name.indexOf("_")
+    val idCandidate = if(otherIndex != -1) name.substring(0, otherIndex) else return null
+
+    return Trump.values().findLast { it.isMatch(idCandidate) }?.value
 }
 
 fun getName(name: String): String {

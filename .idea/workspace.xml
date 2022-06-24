@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d72b2b2b-e159-4451-88d8-920886fc6168" name="変更" comment="" />
+    <list default="true" id="d72b2b2b-e159-4451-88d8-920886fc6168" name="変更" comment="スペルミスを修正">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,20 +61,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/IntelliJ/Projects/KCS/TrumpDatasetSorter",
-    "project.structure.last.edited": "モジュール",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IntelliJ/Projects/KCS/TrumpDatasetSorter&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;モジュール&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\IntelliJ\Projects\KCS\TrumpDatasetSoter\src\main\kotlin" />
@@ -99,7 +103,9 @@
       <workItem from="1655731411699" duration="1781000" />
       <workItem from="1655771471712" duration="1405000" />
       <workItem from="1655811451493" duration="5900000" />
-      <workItem from="1655884451287" duration="123000" />
+      <workItem from="1655884451287" duration="365000" />
+      <workItem from="1655908993296" duration="623000" />
+      <workItem from="1656049515073" duration="2312000" />
     </task>
     <task id="LOCAL-00001" summary="名前イニシャルに対応">
       <created>1655735213619</created>
@@ -116,7 +122,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="名前イニシャルに対応" />
-    <option name="LAST_COMMIT_MESSAGE" value="名前イニシャルに対応" />
+    <MESSAGE value="スペルミスを修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="スペルミスを修正" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -125,6 +132,11 @@
           <url>file://$PROJECT_DIR$/src/main/kotlin/Main.kt</url>
           <line>24</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/Main.kt</url>
+          <line>80</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
